@@ -1,6 +1,6 @@
 console.log("..............STEP 1.................");
 function stringHandsOn(){
-                console.log(string);
+                console.log('String Before Trim =',string);
 }
 var string =  "     Hey you are doing good, keep it up     "
 stringHandsOn();
@@ -11,7 +11,7 @@ console.log("..............STEP 3.................");
 var strTrim = string.trim();
 var aftertrimString = strTrim.trimEnd();
 var strLenth = aftertrimString.length;
-console.log(`String Before Trim =, ${ string } , Sring After trim String = , ${aftertrimString}`);
+console.log(`Sring After trim String = , ${aftertrimString}`);
 console.log(` After trim length= , ${strLenth} `);
 console.log("..............STEP 4.................");
 var countRemvoeSpace = strLeanth-strLenth;
@@ -31,7 +31,12 @@ console.log("..............STEP 8.................");
 var subString = aftertrimString.slice(4,22)
 console.log(`Substring of index 22 is = ${subString}`);
 console.log("..............STEP 9.................");
-
+var result = aftertrimString.endsWith("up");
+console.log(`String Ends with "up" = ${result}`);
+ console.log("..............STEP 10.................");
+ var result = aftertrimString.startsWith("Hey");
+ console.log(` String starts With "Hey" = ${result}`);
+ 
 
 
 
