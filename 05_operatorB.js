@@ -9,7 +9,7 @@ console.log("is the num1 value greater than num2 : ", greaterNumber);
 greaterNumber(800,899);
 console.log('................STEP 1.2.........................');
 greaterNumber(10,-10);
-console.log('................STEP 2.........................');
+console.log('................STEP 2............2.............');
 var evenOdd = function(num){
     var evenOrOdd = num%2==0 ? "True"  :"False";
     console.log('Please check given no is odd or even :',evenOrOdd);

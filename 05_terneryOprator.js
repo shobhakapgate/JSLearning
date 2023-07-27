@@ -1,6 +1,5 @@
 var jennySsc = 97;
 var jennyHsc = 67;
-//
 var result = (jennySsc >= 60 && jennyHsc>=60) ? "Please go inside all the best" : "Chal Nikal";
 console.log(result);
 
