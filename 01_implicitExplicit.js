@@ -52,8 +52,6 @@ var result = '4' / '2'
 console.log(`numric string is used with (/) like "4 / 2" Result is :  ${result} 
 Type of value is : ${ typeof result}` );
 
-console.log('                                                                    ');
-
 
 
 
