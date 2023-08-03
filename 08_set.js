@@ -1,32 +1,43 @@
-var array = [10, 20, 30, 50, 10, 80, 20];
-console.log(array);
-console.log(`Type of array is: ${typeof array}`);
+let mySet = new Set();
+mySet.add(2);
+mySet.add(4);
+mySet.add(6);
+mySet.add(7);
+console.log(mySet);
 
-console.log(`Total number of elements in array is: ${array.length}`);
-let element2 = array[2];
-console.log(`Element stored at index 2 is: ${element2}`);
+mySet.add(4);
+console.log(mySet);
 
-let element1 = array[0];
-console.log(`Element stored at index 1 is: ${element1}`);
-let arrayLength = array.length;
-let elementLast = array[arrayLength-1];
-console.log(`Last element is : ${elementLast}`);
+let isAvailable = mySet.has(6)
+console.log(isAvailable);
 
-console.log(`---------------------------`);
-array[1] = 100;
-console.log(array);
+let is9Available = mySet.has(9)
+console.log(is9Available);
 
-let isAvailable = array.includes(80);
-console.log(`Is 80 available : ${isAvailable}`);
+console.log(`Set size is ${mySet.size}`);
 
-let indexOfElement = array.indexOf(50);
-console.log(`Index of 50 is : ${indexOfElement}`);
+mySet.delete(4);
+console.log(mySet);
 
-console.log(`----------- Array traversing -----------`);
-for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+// mySet.clear();
+for (const element of mySet) {
     console.log(element);
 }
+
+let array1 = [4, 5, 4, 5, 8, 5];
+let setOfNumbers = new Set();
+for (const value of array) {
+    setOfNumbers.add(value);
+}
+console.log(array);
+console.log(setOfNumbers);
+
+console.log(`Removing duplicate elements from array using spread operator`);
+let arrayNew = [4, 5, 4, 5, 8, 5, 7, 8, 9, 7, 8];
+arrayNew = [...new Set(arrayNew)];
+console.log(arrayNew);
+// console.log(newSet);
+    console.log(element);
 console.log(`----------- Array traversing in reverse order -----------`);
 
 for (let index = array.length-1; index >= 0; index--) {
@@ -80,28 +91,3 @@ console.log(array);
 var array = [10, 20, 30, 50, 10, 80, 20];
 array.splice(4, 2, 33, 55, 66, 77 );
 console.log(array);
-
-console.log(`------ concat ----------`);
-let array1 = [3, 4, 5, 6];
-let array2 = [6, 7, 8, 9];
-let array3 = array1.concat(array2);
-console.log(array3);
-
-console.log(`------ join ----------`);
-let result = array1.join(",");
-console.log(result);
-
-console.log(`------ for of loop ----------`);
-for (const element of array3) {
-    console.log(element);
-}
-
-console.log(`------ array resize ----------`);
-let array4 = [4, 5, 6, 7, 8, 9];
-array4.length = 3;
-console.log(array4);
-
-console.log(`------ spread operator ... ----------`);
-let array5 = [4, 5, 6, 7, 8, 9];
-console.log(array5);
-console.log(...array5);
