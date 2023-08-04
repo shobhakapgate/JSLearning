@@ -22,6 +22,7 @@ for (let index = 0; index < arrayNumbers.length; index++) {
     const element = arrayNumbers[index];
     if (index%2==0){
         const element = arrayNumbers[index];
+//console.log(arrayNumber[index]);
 count=count+element;
     }
 }
