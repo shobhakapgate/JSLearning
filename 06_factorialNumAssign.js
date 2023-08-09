@@ -4,7 +4,7 @@ function factorial(num){
 for (let index = 1; index <= num ; index++) {
     result = result * index;
 }   
-console.log(result);
+console.log(`Factorial number is = ${result}`);
 }
 
 factorial(5);
