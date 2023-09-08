@@ -37,7 +37,7 @@ console.log(`Sum of all elements are = ${sum}`);
 
 console.log(`---------------------------- STEP 6 Even Index Numbers-------------------------------------`);
 arrayNumbers.forEach((currentValue,index) => {
-    if (index%2==0) {
+    if (index%2==0) {x  
         console.log(currentValue);
     }
 });
